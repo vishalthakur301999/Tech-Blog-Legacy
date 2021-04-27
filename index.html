@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TechBlog</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Css/tachyons.min.css">
+    <link rel="stylesheet" href="Css/index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .cpuside{
+            background-image: url('img/indexcpu.png');
+        }
+        .gpuside{
+            background-image: url('img/indexgpu.png');
+        }
+        .indexbanner{
+            background-image: url("img/indexbg.jpg");
+        }
+        .sj{
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <nav class="flex justify-between bb b--white-10 black--bg t8">
+        <a class="f3 link white-70 hover-white no-underline flex items-center pa3 fjalla" href="index.html">
+            Tech Blog
+        </a>
+        <div class="flex-grow pa3 flex items-center">
+            <a class="f3 link dib white dim mr3 fjalla" href="CPU.html">CPU's</a>
+            <a class="f3 link dib white dim mr3 fjalla" href="GPU.html">GPU's</a>
+        </div>
+    </nav>
+</header>
+<main>
+    <div class="indexbanner">
+        <div class="jumbotxt">
+            <span class="f-headline-l fjalla white b--white-10 pa3">
+                We Really Love Silicon.
+            </span>
+        </div>
+    </div>
+    <!--cpu&gpu-->
+    <div class="vh-100 black--bg flex flex-column sj">
+        <div class="flex">
+            <span class="f1-l white fjalla pt3 pb3">Concise Tech Blogs.</span>
+        </div>
+        <div class="flex flex-wrap">
+            <div class="indexbox flex cpuside" style="height: 450px">
+                <a href="CPU.html" class="indexdirect f-6 white link fjalla">
+                    CPU's
+                </a>
+            </div>
+            <div class="indexbox flex gpuside" style="height: 450px">
+                <a href="GPU.html" class="indexdirect f-6 white link fjalla">
+                    GPU's
+                </a>
+            </div>m
+        </div>
+    </div>
+</main>
+</body>
+</html>
